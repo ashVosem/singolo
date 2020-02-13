@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 html{
-    width: 1020px;
+    /*width: 1020px;*/
     font-family: "Lato";
+    cursor: default;
 }
 
-.header{
+header{
     display: flex;
     height: 89px;
     background-color: #2d303a;
+    padding: 0 40px 0 40px;
+    justify-content: space-between;
 }
 
-body, p, main ,footer, h1{
+body, p, main ,footer,h1{
     margin: 0;
 }
 
@@ -25,24 +28,62 @@ body, p, main ,footer, h1{
 .after_singolo{
     color: #f06c64;
 }
+
 .left{
     font-size: 1.5rem;
-    justify-self: start;
     font-weight: 700;
 }
 .right{
     font-size: 0.75rem;
-    justify-self: end;
+    margin-top: 9px;
+    width: 371px;
+    justify-content: space-between;
+}
+.dot{
+    color: #3c404f;
+}
+.right > .hover:hover{
+    color: #f06c64;
+    cursor: pointer;
 }
 
 main{
+    display: flex;
     height: 594px;
     background-color: #f06c64;
     border-top: 6px solid #323746;
     border-bottom: 6px solid #ea676b;
+    justify-content: space-between;
 }
 footer{
-    height: 495px;
+    height: 427px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff; 
+    padding: 67px 40px 0 40px;
+}
+h1{
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 18px;
+    color: #666d89;
+}
+.footer_text{
+    text-align: start;
+    font-size: 1.125rem;
+    padding-top: 29px;
+    line-height: 30px;
+    color: #767e9e;
+    /*width: 980px;*/
+}
+.chev_left{
+    float: left;
+}
+.chev_right{
+    float: right;
+}
+.chev{
+    padding: 0 40px 0 40px;
+}
+.chev:hover{
+    background-color: rgba(45, 48, 58, 0.05);
 }
