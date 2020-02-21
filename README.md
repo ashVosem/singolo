@@ -1,1 +1,1 @@
-# https://ashVosem.github.io/singolo/index
+# https://ashVosem.github.io/singolo/singolo1.html
