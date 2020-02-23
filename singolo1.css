@@ -57,7 +57,7 @@ header {
 }
 .right {
     font-size: 0.75rem;
-    margin-top: 12px;
+    margin-top: 13px;
     width: 371px;
     justify-content: space-between;
 }
@@ -88,7 +88,7 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-.chev:hover { 
+.chevs:hover { 
     filter: opacity(80%);
     cursor: pointer;
 }
@@ -99,7 +99,16 @@ main {
     margin: -5px 20px 0 0;
     
 }
+.horizontal {
+    position: relative;
+    width: 481px;
+    height: 244px;  
+}
+
 .vertical > img {
+    position: absolute;
+}
+.horizontal > img {
     position: absolute;
 }
 
@@ -108,21 +117,22 @@ main {
 *** VERTICAL MOBILE ELEMS ***
 *
 */
-.shadow {
+
+.shadow_v {
     z-index: 1;
 }
-.base {
+.base_v {
     z-index: 2;
     overflow: hidden;  
 
     margin-left: -2px;
     margin-top: -1px;
 }
-.layer {
+.layer_v {
     position: absolute;
     margin: -135px 0 0 -14px;
 }
-.screen {
+.screen_v {
     z-index: 3;
     overflow: hidden;
     position: absolute;
@@ -134,29 +144,81 @@ main {
 
     border: 3px solid #c6c6c6;
     border-radius: 4px;
-
 }
-.cam_circle {
+.cam_circle_v {
     z-index: 3;
     margin: 16px 0 0 102px;
 }
-.cam_dot {
+.cam_dot_v {
     z-index: 4;
     margin: 18px 0 0 105px;
 }
-.speaker {
+.speaker_v {
     z-index: 3;
     margin: 35px 0 0 90px;
 }
-.home_circle {
+.home_circle_v {
     z-index: 3;
     margin: 407px 0 0 86px;
 }
-.home_square {
+.home_square_v {
     z-index: 3;
     margin: 420px 0 0 98px;
 }
 
+/*
+*
+*** VERTICAL MOBILE ELEMS ***
+*
+*/
+
+.shadow_h {
+    z-index: 1;
+}
+.base_h {
+    z-index: 2;
+    overflow: hidden;  
+
+    margin-left: -2px;
+    margin-top: -1px;
+}
+.layer_h {
+    position: absolute;
+    margin: -120px 0 0 -125px;
+}
+.screen_h {
+    z-index: 3;
+    overflow: hidden;
+    position: absolute;
+    
+    width: 333px;
+    height: 188px;
+
+    margin: 11px 0 0 56px;
+
+    border: 3px solid #c6c6c6;
+    border-radius: 4px;
+}
+.cam_circle_h {
+    z-index: 3;
+    margin: 101px 0 0 429px;
+}
+.cam_dot_h {
+    z-index: 4;
+    margin: 103px 0 0 432px;
+}
+.speaker_h {
+    z-index: 3;
+    margin: 88px 0 0 415px;
+}
+.home_circle_h {
+    z-index: 3;
+    margin: 84px 0 0 6px;
+}
+.home_square_h {
+    z-index: 3;
+    margin: 97px 0 0 19px;
+}
 /*
 *
 *** FOOTER ***
