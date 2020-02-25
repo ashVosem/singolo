@@ -1,0 +1,137 @@
+@import url(assets/fonts/fonts.css);
+
+/* @import url('https://fonts.googleapis.com/css?family=Lato&display=swap'); */
+
+html {
+    font-family: 'Lato-Regular', sans-serif;
+    cursor: default;
+}
+body, p, main ,footer,h1 {
+    margin: 0;
+}
+/*
+*
+*** 1020 width - 40*2 paddings = 940 ***
+************ 1020px block **************
+*
+*/
+.content {
+    width: 940px;  
+    margin: 0 auto;
+    padding: 0 40px 0 40px;
+}
+/*
+*
+*** HEADER ***
+*
+*/
+header {
+    display: flex; 
+    height: 864px;
+    background-color: #2d303a;
+    color: #666d89; 
+    border-bottom: 6px solid #323746;
+}
+.header > h1 {
+    font-size: 1.85rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+
+    margin-top: 71px;
+}
+.header > p {
+    font-size: 1.125rem;
+    margin-top: 30px;
+}
+
+nav{
+    display: inline-flex;
+    margin-top: 15px;
+    width: 287px;
+    justify-content: space-between;
+}
+nav > p {
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 6px;
+
+    padding: 7px;
+    border: 1px solid #767e9e;
+    border-radius: 5px;
+}
+nav > p:hover {
+    color: #dedede;
+    border-color: #dedede;
+}
+/*
+*
+*** HEADER PICS POSITION ***
+*
+*/
+.pic_1 {
+    margin: -10px 0 0 -8px;
+}
+.pic_2 {
+    margin: -42px 0 0 -82px;
+}
+.pic_3 {
+    margin: 0 0 0 -11px;
+}
+.pic_4 {
+    margin: -1px 0 0  -24px;
+}
+.pic_5 {
+    margin: -15px 0 0 -10px;
+}
+.pic_6 {
+    margin: -3px 0 0 -16px;
+}
+.pic_7 {
+    margin: -38px 0 0 -31px;
+}
+.pic_8 {
+    margin: -31px 0 0 -24px;
+}
+.pic_9 {
+    margin: -1px 0 0 -16px;
+}
+.pic_10 {
+    margin: -112px 0 0 -141px;
+}
+.pic_11 {
+    margin: -174px 0 0 -144px;
+}
+.pic_12 {
+    margin: -59px 0 0 -35px;
+}
+/*
+*
+*** HEADER GRID ***
+*
+*/
+.header-grid {
+    margin-top: 18px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-column-gap: 19px;
+    grid-row-gap: 20px;
+}
+.header--grid-elem {
+    overflow: hidden;
+    width: 220px;
+    height: 187px;
+}
+/*
+*
+*** FOOTER ***
+*
+*/
+footer {
+    border-bottom: 6px solid #ffffff;
+
+    background-color: #f2f2f2;
+    min-height: 728px;
+}
