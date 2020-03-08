@@ -2,7 +2,7 @@
 
 | UwU | Singolo 1 | Singolo2 | Singolo 3 |
 | - | - | - | - |
-| **[Full](https://ashVosem.github.io/singolo/singolo.html)** | [Link](https://ashVosem.github.io/singolo/singolo1.html) | [Link](https://ashVosem.github.io/singolo/singolo2.html) | [Link](https://ashVosem.github.io/singolo/singolo3.html) |
+| **[Full](https://ashVosem.github.io/singolo/index.html)** | [Link](https://ashVosem.github.io/singolo/singolo1.html) | [Link](https://ashVosem.github.io/singolo/singolo2.html) | [Link](https://ashVosem.github.io/singolo/singolo3.html) |
 
 
 ## Обратите Внимание!
