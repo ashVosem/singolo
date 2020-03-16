@@ -17,6 +17,18 @@ body, p, main ,footer, h1, h2, h3  {
 body {
     background-color: rgb(45, 48, 58);
 }
+.flag_margin {
+    position: absolute;
+	margin-top: -89px;
+}
+.flag_margin_services {
+    position: absolute;
+	margin-top: -155px;
+}
+.flag_margin_contact {
+    position: absolute;
+	margin-top: -105px;
+}
 /*
 *
 *** 1020 width - 40*2 paddings = 940 ***
@@ -72,23 +84,57 @@ header {
     font-size: 0.75rem;
     margin-top: 13px;
     width: 371px;
+    font-weight: 600;
     justify-content: space-between;
 }
-.hover {
+.hover:hover {
     color: #f06c64;
-    cursor: pointer;
+}
+.active {
+    color: #f06c64;
 }
 
 .dot {
     color: #3c404f;
 }
+/*
+*
+*** SLIDER ***
+*
+*/
+.slide {
+    opacity: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 796px;
+}
+.slide > .horizontal {
+    margin-top: 116px;
+}
+.active_slide {
+    opacity: 0;
+    transition: 1s;
+    animation: show 1s 0.2s;
+    animation-fill-mode: forwards;
+}
 
+@keyframes show{
+    0%{
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+}
 /*
 *
 *** MOBILES ***
 *
 */
-
+.slide_2 {
+    position: absolute;
+    margin-top: 5px;
+}
 .mobiles { 
     display: flex;
     height: 594px;
@@ -100,6 +146,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.chevs {
+    z-index: 2;
 }
 .chevs:hover { 
     filter: opacity(80%);
@@ -124,13 +173,21 @@ header {
 .horizontal > img {
     position: absolute;
 }
-
+.none {
+    opacity: 0;
+}
 /*
 *
 *** VERTICAL MOBILE ELEMS ***
 *
 */
-
+.screen_v {
+    background-color: black;
+}
+#square_v,
+#square_h {
+    cursor: pointer;
+}
 .shadow_v {
     z-index: 1;
 }
@@ -184,7 +241,10 @@ header {
 *** HORIZONTAL MOBILE ELEMS ***
 *
 */
-
+.screen_h {
+    cursor: pointer;
+    background-color: black;
+}
 .shadow_h {
     z-index: 1;
 }
@@ -356,57 +416,77 @@ header {
     padding: 7px;
     border: 1px solid #767e9e;
     border-radius: 5px;
+
+    cursor: pointer;
 }
 .portfolio-content nav > p:hover {
     color: #dedede;
     border-color: #dedede;
 }
+.portfolio-content > nav > .portfolio_active {
+    color: #dedede;
+    border-color: #dedede;
+}
+.border_portfolio {
+    outline : 5px solid #afafb1;
+}
+.portfolio_pics {
+    cursor: pointer;
+}
 /*
 *
-*** PORTFOLIO PICS POSITION ***
+*** OVER 1000000 IQ MOVES ***
 *
 */
+.portfolio-grid > div {
+    width: 225px;
+    height: 190px;
+}
 .pic_1 {
-    margin: -10px 0 0 -8px;
+    background-image: url(assets/singolo2/header_pics/portfolio-1.jpg);
+}
+.pic_1 {
+    background-image: url(assets/singolo2/header_pics/portfolio-2.jpg);
 }
 .pic_2 {
-    margin: -42px 0 0 -82px;
+    background-image: url(assets/singolo2/header_pics/portfolio-3.jpg);
 }
 .pic_3 {
-    margin: 0 0 0 -11px;
+    background-image: url(assets/singolo2/header_pics/portfolio-4.jpg);
 }
 .pic_4 {
-    margin: -1px 0 0  -24px;
+    background-image: url(assets/singolo2/header_pics/portfolio-5.jpg);
 }
 .pic_5 {
-    margin: -15px 0 0 -10px;
+    background-image: url(assets/singolo2/header_pics/portfolio-6.jpg);
 }
 .pic_6 {
-    margin: -3px 0 0 -16px;
+    background-image: url(assets/singolo2/header_pics/portfolio-7.jpg);
 }
 .pic_7 {
-    margin: -38px 0 0 -31px;
+    background-image: url(assets/singolo2/header_pics/portfolio-8.jpg);
 }
 .pic_8 {
-    margin: -31px 0 0 -24px;
+    background-image: url(assets/singolo2/header_pics/portfolio-9.jpg);
 }
 .pic_9 {
-    margin: -1px 0 0 -16px;
+    background-image: url(assets/singolo2/header_pics/portfolio-10.jpg);
 }
 .pic_10 {
-    margin: -112px 0 0 -141px;
+    background-image: url(assets/singolo2/header_pics/portfolio-11.jpg);
 }
 .pic_11 {
-    margin: -174px 0 0 -144px;
+    background-image: url(assets/singolo2/header_pics/portfolio-12.jpg);
 }
 .pic_12 {
-    margin: -59px 0 0 -35px;
+    background-image: url(assets/singolo2/header_pics/portfolio-1.jpg);
 }
 /*
 *
 *** PORTFOLIO GRID ***
 *
 */
+
 .portfolio-grid {
     margin-top: 18px;
 
@@ -417,10 +497,8 @@ header {
     grid-column-gap: 19px;
     grid-row-gap: 20px;
 }
-.portfolio--grid-element {
-    overflow: hidden;
-    width: 220px;
-    height: 187px;
+.portfolio-grid {
+    cursor: pointer;
 }
 /*
 *
@@ -541,10 +619,9 @@ header {
     margin-top: 19px;
 }
 .quote-form > h2 {
-    margin: 44px 0 15px 0;
-    letter-spacing: -1px;
+    margin: 39px 0 18px 0;
 
-    font-size: 1.875rem;
+    font-size: 1.9rem;
     font-weight: bold;
 
     color: #f0d8d9;   

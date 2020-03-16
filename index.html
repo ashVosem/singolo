@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,48 +12,53 @@
             <div class="header-elem left">
                 <h1>SINGOLO<span class="after_singolo">*</span></h1>
             </div>
-            <nav class="header-elem right">
-                <a class="hover" href="#" title="home">HOME</a>
-                <p class="dot">·</p><a href="#services" title="service">SERVICES</a>
-                <p class="dot">·</p><a href="#portfolio" title="portfolio">PORTFOLIO</a>
-                <p class="dot">·</p><a href="#about" title="about">ABOUT</a>
-                <p class="dot">·</p><a href="#contact" title="contact">CONTACT</a>
+            <nav id="nav" class="header-elem right">
+                <a class="active hover" href="#" title="home">HOME</a>
+                <p class="dot">·</p><a class="hover" href="#services" title="services">SERVICES</a>
+                <p class="dot">·</p><a class="hover" href="#portfolio" title="portfolio">PORTFOLIO</a>
+                <p class="dot">·</p><a class="hover" href="#about" title="about">ABOUT</a>
+                <p class="dot">·</p><a class="hover" href="#contact" title="contact">CONTACT</a>
             </nav>
         </div>
     </header>
     <main>
-        <section class="mobiles">
+        <section class="mobiles" id="slider">
             <div class="content mobiles-content"> 
-                <img class="chevs" src="assets/singolo1//chev_left.svg">
-                <div class="vertical">        
-                    <img src="assets/singolo1/debilniki/vertical/Shadow.svg" alt="shadow" class="shadow_v">
-                    <img src="assets/singolo1/debilniki/vertical/Base.svg" alt="base" class="base_v">
-                    <img src="assets/singolo1/debilniki/cam/Outer Circle.svg" alt="cam_circle" class="cam_circle_v">
-                    <img src="assets/singolo1/debilniki/cam/Red Dot.svg" alt="cam_dot" class="cam_dot_v">
-                    <img src="assets/singolo1/debilniki/home_butt/Circle.svg" alt="home_circle" class="home_circle_v">
-                    <img src="assets/singolo1/debilniki/home_butt/Square.svg" alt="home_square" class="home_square_v">
-                    <img src="assets/singolo1/debilniki/vertical/Speaker.svg" alt="speaker" class="speaker_v">
-                    <div class="screen_v">
-                        <img src="assets/singolo1/debilniki/vertical/Layer 6.png" alt="layer" class="layer_v">
-                    </div> 
-                </div>
-                <div class="horizontal">
-                    <img src="assets/singolo1/debilniki/horizontal/Shadow (1).svg" alt="shadow" class="shadow_h">
-                    <img src="assets/singolo1/debilniki/horizontal/Base (1).svg" alt="base" class="base_h">
-                    <img src="assets/singolo1/debilniki/cam/Outer Circle.svg" alt="cam_circle" class="cam_circle_h">
-                    <img src="assets/singolo1/debilniki/cam/Red Dot.svg" alt="cam_dot" class="cam_dot_h">
-                    <img src="assets/singolo1/debilniki/home_butt/Circle.svg" alt="home_circle" class="home_circle_h">
-                    <img src="assets/singolo1/debilniki/home_butt/Square.svg" alt="home_square" class="home_square_h">
-                    <img src="assets/singolo1/debilniki/horizontal/Speaker (1).svg" alt="speaker" class="speaker_h">
-                    <div class="screen_h">
-                        <img src="assets/singolo1/debilniki/horizontal/Layer 5.png" alt="layer" class="layer_h">
-                    </div> 
-                </div>       
-                <img class="chevs" src="assets/singolo1/chev_right.svg">  
-            </img>
+                <img id="chev_l" class="chevs" src="assets/singolo1/chev_left.svg">
+                <div id="slides">
+                    <img src="assets/Slide-2.png" alt="slide_2" class="slide slide_2"> 
+                    <div class="slide slide_1 active_slide">
+                        <div class="vertical">   
+                            <img src="assets/singolo1/debilniki/vertical/Shadow.svg" alt="shadow" class="shadow_v">
+                            <img src="assets/singolo1/debilniki/vertical/Base.svg" alt="base" class="base_v">
+                            <img src="assets/singolo1/debilniki/cam/Outer Circle.svg" alt="cam_circle" class="cam_circle_v">
+                            <img src="assets/singolo1/debilniki/cam/Red Dot.svg" alt="cam_dot" class="cam_dot_v">
+                            <img src="assets/singolo1/debilniki/home_butt/Circle.svg" alt="home_circle" class="home_circle_v">
+                            <img src="assets/singolo1/debilniki/home_butt/Square.svg" id="square_v" alt="home_square" class="home_square_v">
+                            <img src="assets/singolo1/debilniki/vertical/Speaker.svg" alt="speaker" class="speaker_v">
+                            <div class="screen_v">
+                                <img src="assets/singolo1/debilniki/vertical/Layer 6.png" id="layer_v" alt="layer" class="layer_v">
+                            </div> 
+                        </div>
+                        <div class="horizontal">
+                            <img src="assets/singolo1/debilniki/horizontal/Shadow (1).svg" alt="shadow" class="shadow_h">
+                            <img src="assets/singolo1/debilniki/horizontal/Base (1).svg" alt="base" class="base_h">
+                            <img src="assets/singolo1/debilniki/cam/Outer Circle.svg" alt="cam_circle" class="cam_circle_h">
+                            <img src="assets/singolo1/debilniki/cam/Red Dot.svg" alt="cam_dot" class="cam_dot_h">
+                            <img src="assets/singolo1/debilniki/home_butt/Circle.svg" alt="home_circle" class="home_circle_h">
+                            <img src="assets/singolo1/debilniki/home_butt/Square.svg" id="square_h" alt="home_square" class="home_square_h">
+                            <img src="assets/singolo1/debilniki/horizontal/Speaker (1).svg" alt="speaker" class="speaker_h">
+                            <div class="screen_h">
+                                <img src="assets/singolo1/debilniki/horizontal/Layer 5.png" id="layer_h" alt="layer" class="layer_h">
+                            </div> 
+                        </div>      
+                    </div>
+                </div>          
+                <img id="chev_r" class="chevs" src="assets/singolo1/chev_right.svg">  
         </section>
-        <section id="services" class="our_services">
+        <section class="our_services">
             <div class="content our_services-content">
+                <div id="services" class="flag_margin_services"></div>
                 <h2>Our Services</h2>
                 <p class="our_services-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="services">
@@ -122,58 +126,37 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="portfolio">
+        <section class="portfolio">
             <div class="content portfolio-content">
+                <div id="portfolio" class="flag_margin"></div>
                 <h2>Portfolio</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                <nav>
-                    <p>All</p>
+                <nav id="portfolio_nav">
+                    <p class=" nav_p portfolio_active">All</p>
                     <p>Web Design</p>
                     <p>Graphic Design</p>
                     <p>Artwork</p>
                 </nav>
-                <div class="portfolio-grid">
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/1.png" class="pic_1" alt="1">
-                    </div>
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/2.png" class="pic_2" alt="2">
-                    </div>
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/3.png" class="pic_3" alt="3">
-                    </div>
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/4.png" class="pic_4" alt="4">
-                    </div>
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/5.png" class="pic_5" alt="5">
-                    </div>
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/6.png" class="pic_6" alt="6">
-                    </div>
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/7.png" class="pic_7" alt="7">
-                    </div>
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/8.png" class="pic_8" alt="8">
-                    </div>
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/9.png" class="pic_9" alt="9">
-                    </div>
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/10.png" class="pic_10" alt="10">
-                    </div>
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/11.png" class="pic_11" alt="11">
-                    </div>
-                    <div class="portfolio--grid-element">
-                        <img src="assets/singolo2/header_pics/12.png" class="pic_12" alt="12">
-                    </div>
+                <!-- OVER 100000000000000000000000 IQ MOVES -->
+                <div id="portfolio_pics" class="portfolio-grid">
+                    <div class="pic_1" alt="1"></div>
+                    <div class="pic_2" alt="2"></div>
+                    <div class="pic_3" alt="3"></div>
+                    <div class="pic_4" alt="4"></div>
+                    <div class="pic_5" alt="5"></div>
+                    <div class="pic_6" alt="6"></div>
+                    <div class="pic_7" alt="7"></div>
+                    <div class="pic_8" alt="8"></div>
+                    <div class="pic_9" alt="9"></div>
+                    <div class="pic_10" alt="10"></div>
+                    <div class="pic_11" alt="11"></div>
+                    <div class="pic_12" alt="12"></div>
                 </div>  
             </div>
         </section>
-        <section id="about" class="about_us">
+        <section class="about_us">
             <div class="content about_us-content">
+                <div id="about" class="flag_margin"></div>
                 <h2>About Us</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="about_us-grid">
@@ -215,8 +198,7 @@
                                 <img src="assets/singolo2/footer_pics/about_us_icons/ellipse.svg" alt="ellipse" class="ellipse_as ellipse_4">
                                 <img src="assets/singolo2/footer_pics/about_us_icons/linkedin.png" alt="linkedin" class="linkedin_as">
                             </div> 
-                        </div>
-                      
+                        </div>    
                     </div>
                     <div class="about_us--grid-element">
                         <img src="assets/singolo2/footer_pics/about_us_photos/3.png" alt="3">
@@ -241,8 +223,9 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class='quote'>
+        <section class='quote'>
             <div class="content quote-form">
+                <div id="contact" class="flag_margin_contact"></div>
                 <h2>Get a Quote</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="quote--form-contact">
