@@ -111,19 +111,47 @@ header {
 .slide > .horizontal {
     margin-top: 116px;
 }
-.active_slide {
-    opacity: 0;
-    transition: 1s;
-    animation: show 1s 0.2s;
-    animation-fill-mode: forwards;
-}
 
+.active_slide_l {
+    opacity: 1;
+
+    transition: 1.2s;
+    animation: show 1s 0.5s;
+    animation-fill-mode: forwards;
+
+    animation: 0.5s left ease-in-out;
+}
+.active_slide_r {
+    opacity: 1;
+
+    transition: 1.2s;
+    animation: show 1s 0.5s;
+    animation-fill-mode: forwards;
+    
+    animation: 0.5s right ease-in-out;
+}
 @keyframes show{
     0%{
-    opacity:0;
+        opacity:0;
     }
     100% {
-    opacity:1;
+        opacity:1;
+    }
+}
+@keyframes right {
+    from {
+        margin-left: -100vw;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+@keyframes left {
+    from {
+        margin-left: 100vw;
+    }
+    to {
+        margin-left: 0;
     }
 }
 /*
