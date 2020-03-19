@@ -96,7 +96,12 @@ Array.from(document.getElementById('portfolio_pics').querySelectorAll('div')).fo
 
 portfolio_pics.addEventListener('click', (event) => {
     portfolio_pics.querySelectorAll('div').forEach(element => element.classList.remove('border_portfolio'));
-    event.target.classList.add('border_portfolio'); 
+
+    portfolio_pics.querySelectorAll('div').forEach(element => {
+        if(element === event.target ) {
+            element.classList.add('border_portfolio')
+        }
+    });
 });
 
 // iq over 100000000 sorry ))0)
@@ -120,35 +125,40 @@ const button = document.getElementById('button');
 
 const closeButton = document.getElementById('close-button');
 
-button.addEventListener('click', () => {
+button.addEventListener('click', (event) => {
     const describe = document.getElementById('describe').value.toString();
     const subject = document.getElementById('subject').value.toString();
+
+    const name = document.getElementById('name').value.toString();
+    const email = document.getElementById('email').value.toString();
 
     const sliced_subj = subject.slice(0,20);
     const sliced_describe = describe.slice(0,20);
 
-    if(describe === '') {
-        document.getElementById('descriptionResult').innerText = 'No description';
-    }
-    else {
-        if (sliced_describe.length < describe.length) { 
-            document.getElementById('descriptionResult').innerText = sliced_describe.concat('...');
-        } else {
-            document.getElementById('descriptionResult').innerText = describe;
+    if(name !== '' && email.includes('@')) {
+        if(describe === '') {
+            document.getElementById('descriptionResult').innerText = 'No description';
         }
-        
-    }
-    if(subject === '') {
-        document.getElementById('subjectResult').innerText = 'No subject';
-    }
-    else {
-        if (sliced_subj.length < subject.length) {
-            document.getElementById('subjectResult').innerText = sliced_subj.concat('...');
-        } else {
-            document.getElementById('subjectResult').innerText = subject;
-        }   
-    }
-    document.getElementById('message-block').classList.remove('hidden');
+        else {
+            if (sliced_describe.length < describe.length) { 
+                document.getElementById('descriptionResult').innerText = sliced_describe.concat('...');
+            } else {
+                document.getElementById('descriptionResult').innerText = describe;
+            }
+        }
+        if(subject === '') {
+            document.getElementById('subjectResult').innerText = 'No subject';
+        }
+        else {
+            if (sliced_subj.length < subject.length) {
+                document.getElementById('subjectResult').innerText = sliced_subj.concat('...');
+            } else {
+                document.getElementById('subjectResult').innerText = subject;
+            }   
+        }
+        document.getElementById('message-block').classList.remove('hidden');  
+        event.preventDefault();
+    }  
 });
 
 closeButton.addEventListener('click', () => {

@@ -266,7 +266,6 @@ header {
 *
 */
 .screen_h {
-    cursor: pointer;
     background-color: black;
 }
 .shadow_h {
@@ -688,6 +687,8 @@ input:focus:invalid {
     height: 188px;
 }
 .button {
+    cursor: pointer;
+    text-align: center;
     font-weight: 700;
     color: #ea676b;
     text-decoration: none;
