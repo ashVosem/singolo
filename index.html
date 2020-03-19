@@ -58,8 +58,8 @@
                 <img id="chev_r" class="chevs" src="assets/singolo1/chev_right.svg">  
         </section>
         <section class="our_services">
+            <div id="services" class="flag_margin flag_margin_services"></div>
             <div class="content our_services-content">
-                <div id="services" class="flag_margin_services"></div>
                 <h2>Our Services</h2>
                 <p class="our_services-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="services">
@@ -128,8 +128,8 @@
             </div>
         </section>
         <section class="portfolio">
+            <div id="portfolio" class="flag_margin"></div>
             <div class="content portfolio-content">
-                <div id="portfolio" class="flag_margin"></div>
                 <h2>Portfolio</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 <nav id="portfolio_nav">
@@ -156,8 +156,8 @@
             </div>
         </section>
         <section class="about_us">
+            <div id="about" class="flag_margin"></div>
             <div class="content about_us-content">
-                <div id="about" class="flag_margin"></div>
                 <h2>About Us</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="about_us-grid">
@@ -225,17 +225,17 @@
             </div>
         </section>
         <section class='quote'>
+            <div id="contact" class="flag_margin"></div>
             <div class="content quote-form">
-                <div id="contact" class="flag_margin_contact"></div>
                 <h2>Get a Quote</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="quote--form-contact">
                     <form action="POST">
                         <input type="text" class="form-element input name" name="name" placeholder="Name (Required)" required>
                         <input type="email" class="form-element input email" name="email" placeholder="Email (Required)" required>
-                        <input type="text" class="form-element input" name="subject" placeholder="Subject">
-                        <textarea name="message" class="form-element textarea" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>
-                        <button type="submit" class="form-element button" formmethod="POST">Submit</button>
+                        <input type="text" id="subject" class="form-element input" name="subject" placeholder="Subject">
+                        <textarea id="describe" name="message" class="form-element textarea" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>
+                        <button id="button" type="submit" class="form-element button" formmethod="POST">Submit</button>
                     </form>
                     <div class="contact">
                         <h3>Contact Information</h3>
@@ -254,6 +254,17 @@
                         </div>
                     </div>
                 </div> 
+            </div>
+            <div id="message-block" class="hidden">
+                <div id=message>
+                    <p>The letter was sent</p>
+                    <br>
+                    <p class="left">Subject:<span id="subjectResult"></span></p>
+                    <br>
+                    <p class="left">Description:<span id="descriptionResult"></span></p>
+                    <br>
+                    <button id="close-button">OK</button>
+                </div>
             </div>
         </section> 
     </main>

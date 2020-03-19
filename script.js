@@ -11,10 +11,22 @@ nav.addEventListener('click', (event) => {
 
 document.addEventListener('scroll', (event) => {
     const scroll = window.scrollY;
-    const flags = document.querySelectorAll('main>section');
-    console.log(flags);
+    const divCollection = document.querySelectorAll('main>section>.flag_margin');
+    const navCollection = document.querySelectorAll('#nav a');
+
+    divCollection.forEach(element => {
+        if(element.offsetTop <= scroll) {
+            navCollection.forEach(a => {
+                a.classList.remove('active');
+                if(element.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('active');
+                }
+            });
+        }
+    });
 });
 
+// screen lock
 
 const wallpaper_v = document.getElementById('layer_v');
 const wallpaper_h = document.getElementById('layer_h');
@@ -102,4 +114,48 @@ portfolio_nav.addEventListener('click', (event) => {
     portfolio_pics.querySelectorAll('div').forEach((elem,index) => elem.classList.add(`${pics[index]}`));
 });
 
+// get a quote
 
+const button = document.getElementById('button');
+
+const closeButton = document.getElementById('close-button');
+
+button.addEventListener('click', () => {
+    const describe = document.getElementById('describe').value.toString();
+    const subject = document.getElementById('subject').value.toString();
+
+    const sliced_subj = subject.slice(0,20);
+    const sliced_describe = describe.slice(0,20);
+
+    if(describe === '') {
+        document.getElementById('descriptionResult').innerText = 'No description';
+    }
+    else {
+        if (sliced_describe.length < describe.length) { 
+            document.getElementById('descriptionResult').innerText = sliced_describe.concat('...');
+        } else {
+            document.getElementById('descriptionResult').innerText = describe;
+        }
+        
+    }
+    if(subject === '') {
+        document.getElementById('subjectResult').innerText = 'No subject';
+    }
+    else {
+        if (sliced_subj.length < subject.length) {
+            document.getElementById('subjectResult').innerText = sliced_subj.concat('...');
+        } else {
+            document.getElementById('subjectResult').innerText = subject;
+        }   
+    }
+    document.getElementById('message-block').classList.remove('hidden');
+});
+
+closeButton.addEventListener('click', () => {
+    document.getElementById('subjectResult').innerText = '';
+    document.getElementById('descriptionResult').innerText = '';
+
+    document.querySelector('form').reset();
+
+    document.getElementById('message-block').classList.add('hidden');
+});
