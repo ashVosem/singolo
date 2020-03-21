@@ -11,7 +11,8 @@ html {
     cursor: default;
     scroll-behavior: smooth;
 }
-body, p, main ,footer, h1, h2, h3  {
+body, p, main ,footer, h1, h2, h3, ul  {
+    padding: 0;
     margin: 0;
 }
 body {
@@ -99,10 +100,15 @@ header {
 *
 */
 .slide {
-    opacity: 0;
+    width: 74vw;
+    max-width: 796px;
+}
+.slide_1 {
     display: inline-flex;
     justify-content: space-between;
-    width: 796px;
+}
+.slide{
+    opacity: 0;
 }
 .slide > .horizontal {
     margin-top: 116px;
@@ -156,8 +162,12 @@ header {
 *
 */
 .slide_2 {
+    max-width: 796px;
+    min-height: 517px;
+    
+    object-fit: none;
+
     position: absolute;
-    margin-top: 5px;
 }
 .mobiles { 
     display: flex;
@@ -182,13 +192,11 @@ header {
     position: relative;
     width: 240px;
     height: 483px;
-    margin: -5px 20px 0 0;
-    
 }
 .horizontal {
     position: relative;
-    width: 481px;
-    height: 244px;  
+    width: 483px;
+    height: 240px;
 }
 
 .vertical > img {
@@ -453,7 +461,7 @@ header {
 .border_portfolio {
     outline : 5px solid #F06C64;
 }
-.portfolio_pics {
+.portfolio_pics > li {
     cursor: pointer;
 }
 /*
@@ -461,7 +469,8 @@ header {
 *** OVER 1000000 IQ MOVES ***
 *
 */
-.portfolio-grid > div {
+.portfolio-grid > li {
+    list-style: none;
     width: 220px;
     height: 190px;
 }
@@ -856,20 +865,77 @@ input:focus:invalid {
 *
 */
 
-@media (max-width: 768px) {
+@media (max-width: 890px) {
     .services{
-        grid-template-columns: repeat(2, 1fr);;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
     .our_services {
         height: 600px;
     }
     .mobiles {
-        width: 100vw;
+        height: 451px;
+    }
+    .slide {
+        max-width: 650px;
+        width: 80vw;
+    }
+    .slide_2  {
+        min-height: 513px;
+        transform: scale(0.75);
+    }
+    .vertical {
+        transform: scale(0.75);
+    }
+    .horizontal {
+        transform: scale(0.75);
+    }
+    .portfolio {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 }
-
-
+@media (max-width: 768px) {
+    .slide_2  {
+        transform: scale(0.75);
+    }
+    .vertical {
+        transform: scale(0.75);
+    }
+    .horizontal {
+        transform: scale(0.75);
+    }
+    .content {
+        width: 796px;  
+        margin: 0 auto;
+        padding: 0 27px 0 27px;
+    }
+    .slide {
+        max-width: 650px;
+        width: 80vw;
+    }
+}
+@media (max-width: 560px) {
+    .slide_2  {
+        transform: scale(1.25);
+        object-fit: contain; 
+    }
+    .vertical {
+        transform: scale(0.35)
+    }
+    .horizontal {
+        transform: scale(0.35);
+    }
+    .mobiles {
+        height: 218px;
+    }
+    .slide {
+        max-width: 220px;
+    }
+    .slide > * {
+        margin-left: -15vw;
+    }
+}
 
 
 

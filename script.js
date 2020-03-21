@@ -87,17 +87,18 @@ chev_r.addEventListener('click', () => {
 })
 
 let portfolio_pics = document.getElementById('portfolio_pics');
+let portfolio_nav = document.getElementById('portfolio_nav');
 
 let pics = [];
 
 //portfolio pics border
 
-Array.from(document.getElementById('portfolio_pics').querySelectorAll('div')).forEach(element => pics.push(`${element.classList}`));
+Array.from(document.getElementById('portfolio_pics').querySelectorAll('li')).forEach(element => pics.push(`${element.classList}`));
 
 portfolio_pics.addEventListener('click', (event) => {
-    portfolio_pics.querySelectorAll('div').forEach(element => element.classList.remove('border_portfolio'));
+    portfolio_pics.querySelectorAll('li').forEach(element => element.classList.remove('border_portfolio'));
 
-    portfolio_pics.querySelectorAll('div').forEach(element => {
+    portfolio_pics.querySelectorAll('li').forEach(element => {
         if(element === event.target ) {
             element.classList.add('border_portfolio')
         }
@@ -115,8 +116,8 @@ portfolio_nav.addEventListener('click', (event) => {
         return Math.random() - 0.5 
     })
 
-    portfolio_pics.querySelectorAll('div').forEach((elem) => elem.classList.remove(`${elem.classList.item(0)}`));
-    portfolio_pics.querySelectorAll('div').forEach((elem,index) => elem.classList.add(`${pics[index]}`));
+    portfolio_pics.querySelectorAll('li').forEach((elem) => elem.classList.remove(`${elem.classList.item(0)}`));
+    portfolio_pics.querySelectorAll('li').forEach((elem,index) => elem.classList.add(`${pics[index]}`));
 });
 
 // get a quote
