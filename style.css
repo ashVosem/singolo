@@ -1030,6 +1030,9 @@ input:focus:invalid {
 }
 @media (max-width: 440px) {
     .portfolio-grid {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
         grid-template-columns: repeat(2, 151px);
         grid-template-rows: repeat(6, 128px);
     }
@@ -1065,7 +1068,7 @@ input:focus:invalid {
         height: 1080px;
     }
     .portfolio-grid > li {
-        transform: scale(0.58);
+        transform: scale(0.635);
     }
 }
 
