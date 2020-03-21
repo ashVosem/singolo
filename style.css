@@ -17,6 +17,7 @@ body, p, main ,footer, h1, h2, h3, ul  {
 }
 body {
     background-color: rgb(45, 48, 58);
+    overflow-x: hidden;
 }
 .flag_margin {
     position: absolute;
