@@ -247,11 +247,13 @@ header {
 .screen_v {
     z-index: 3;
     overflow: hidden;
+
     position: absolute;
     
     width: 11.9vw;
     height: 21.7vw;
 
+    
     margin: 4vw 0 0 0.75vw;
 
     border: 0.25vw solid #c6c6c6;
@@ -909,7 +911,7 @@ input:focus:invalid {
     .services {
         grid-template-columns: repeat(2, 42.12vw);
         grid-template-rows: repeat(3, auto);
-    }
+    }  
 }
 @media (max-width: 480px) {
     .services {
@@ -917,17 +919,18 @@ input:focus:invalid {
         grid-template-rows: repeat(6, auto);
     }
     .screen_v {
-        z-index: 3;
-        overflow: hidden;
-        position: absolute;
-        
-        width: 11.9vw;
-        height: 21.7vw;
-    
-        margin: 4vw 0 0 0.75vw;
-    
-        border: 0.25vw solid #c6c6c6;
-        border-radius: 0.25vw;
+        margin: 4vw 0 0 0.5vw;
+    }
+    .screen_h {
+        margin: 0.65vw 0 0 3.75vw;
+    }
+}
+@media (max-width: 375px) {
+    .screen_v {
+        margin: 4vw 0 0 0.45vw;
+    }
+    .screen_h {
+        margin: 0.6 0 0 3.75vw;
     }
 }
 /* @media (max-width: 890px) {
