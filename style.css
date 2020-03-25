@@ -913,9 +913,21 @@ input:focus:invalid {
         grid-template-rows: repeat(3, auto);
     }  
 }
+@media (max-width: 625px) {
+    .right {
+        display: none;
+    }
+    .left {
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+}
 @media (max-width: 480px) {
     .services {
-        grid-template-columns: repeat(1, 82.32vw);
+        grid-template-columns: repeat(1, 73.32vw);
         grid-template-rows: repeat(6, auto);
     }
     .screen_v {
