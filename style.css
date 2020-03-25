@@ -913,6 +913,19 @@ input:focus:invalid {
         grid-template-rows: repeat(3, auto);
     }  
 }
+@media (max-width: 660px) {
+    .right {
+        display: none;
+    }
+    .left {
+        position: absolute;
+
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+}
 @media (max-width: 480px) {
     .services {
         grid-template-columns: repeat(1, 82.32vw);
