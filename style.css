@@ -1039,7 +1039,7 @@ input:focus:invalid {
         margin: 0.65vw 0 0 3.75vw;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 370px) {
     .about_us-grid {
         grid-template-columns: repeat(1, 83vw);
         margin-bottom: 20px;
