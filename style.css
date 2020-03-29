@@ -976,7 +976,7 @@ input:focus:invalid {
         grid-template-rows: repeat(6, auto);
     }
     .about_us-grid {
-        grid-template-columns: repeat(1, 78.8vw);
+        grid-template-columns: repeat(1, 77.8vw);
         margin-bottom: 20px;
     }
     .about_us--grid-element {
@@ -1013,9 +1013,9 @@ input:focus:invalid {
         height: 34vw;
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .form-element {
-        width: 76vw;
+        width: 75vw;
     }
     .quote {
         height: 1020px;
@@ -1037,6 +1037,9 @@ input:focus:invalid {
     }
     .screen_h {
         margin: 0.65vw 0 0 3.75vw;
+    }
+    .quote > .content {
+        width: 78.5vw;
     }
 }
 @media (max-width: 370px) {
@@ -1088,3 +1091,4 @@ input:focus:invalid {
         transform: translate(-50%);
     }
 }
+
