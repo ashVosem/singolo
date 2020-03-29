@@ -178,7 +178,7 @@ header {
     position: absolute;
 }
 .mobiles { 
-    
+    overflow: hidden;
     margin-top: 89px;
     display: flex;
     height: 38.6vw;
@@ -699,9 +699,6 @@ header {
 
 /*
 */
-.quote > .content { 
-    padding: 0 0 0 0;
-}
 .quote {
     display: flex;
 
@@ -956,8 +953,7 @@ input:focus:invalid {
         margin-left: 0;
     }
 }
-@media (max-width: 768px) {
-    
+@media (max-width: 768px) {   
     .mobiles {
         min-height: 448px ;
     }
@@ -1035,7 +1031,23 @@ input:focus:invalid {
     }
 }
 @media (max-width: 375px) {
-
+    .about_us-grid {
+        grid-template-columns: repeat(1, 83vw);
+        margin-bottom: 20px;
+    }
+    .about_us--grid-element > img {
+        max-width: 86.8vw;
+        width: 84vw;
+    }
+    .quote > .content {
+        width: 80.7vw;
+    }
+    .form-element {
+        width: 76vw;
+    }
+    #button {
+        width: 80.5vw;
+    }
     .content {
         padding: 0 30px 0 30px;
     }
@@ -1045,11 +1057,11 @@ input:focus:invalid {
     }
     .portfolio-grid {
         grid-gap: 3vw;
-        grid-template-columns: repeat(2, calc(75.8vw/2));
+        grid-template-columns: repeat(2, calc(80vw/2));
         grid-template-rows: repeat(4, calc(132vw/4));
     } 
     .portfolio-grid > li {
-        width: 38vw;
+        width: 41vw;
         height: 33vw;
     }
     .screen_v {
@@ -1067,209 +1079,3 @@ input:focus:invalid {
         transform: translate(-50%);
     }
 }
-/* @media (max-width: 890px) {
-    .quote {
-        height: 850px;
-    }
-    .quote--form-contact {
-        display: block;
-    }
-    .quote--form-contact > div {
-        margin-left: 0;
-    }
-    .about_us--grid-element > img {
-        transform: scale(0.72);
-        margin: -42px 0 -42px -42px; ;
-    }
-    .about_us-grid {
-        grid-template-columns: repeat(3, 219px);
-    }
-    .services{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .our_services {
-        height: 600px;
-    }
-    .mobiles {
-        height: 451px;
-    }
-    .slide {
-        max-width: 650px;
-        width: 80vw;
-    }
-    .slide_2  {
-        min-height: 513px;
-        transform: scale(0.75);
-    }
-    .vertical {
-        transform: scale(0.75);
-    }
-    .horizontal {
-        transform: scale(0.75);
-    }
-    .portfolio {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    .portfolio-grid > li {
-        transform: scale(0.98);
-    }
-}
-@media (max-width: 768px) {
-    .quote {
-        height: 980px;
-    }
-    .size {
-        width: 80vw;
-    }
-    .slide_2  {
-        transform: scale(0.75);
-    }
-    .vertical {
-        transform: scale(0.75);
-    }
-    .horizontal {
-        transform: scale(0.75);
-    }
-    .content {
-        width: 796px;  
-        margin: 0 auto;
-        padding: 0 27px 0 27px;
-    }
-    .slide {
-        max-width: 650px;
-        width: 80vw;
-    }
-    .portfolio {
-        height: 1030px;
-    }
-    .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-}
-@media (max-width: 660px) {
-    .about_us {
-        height: 1720px;
-    }
-    .about_us-grid {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        grid-template-columns: repeat(1, 314px);
-        grid-template-rows: repeat(1, 464px);
-    }
-    .about_us--grid-element {
-        left: 50%;
-    }
-    .about_us--grid-element > img {
-        transform: scale(1.05);
-        margin: 14px 0 7px 7px;
-    }
-    .about_us--grid-icons  {
-        margin-top: 9px;
-        margin-bottom: 9px;;
-    }
-    header {
-        height: 71px;
-    }
-    .header > nav {
-        display: none;
-    }
-    h1 {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .services{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-    }
-    .our_services {
-        height: 880px;
-    }
-    .portfolio {
-        height: 1080px;
-    }
-}
-@media (max-width: 560px) { 
-
-    .pic_9,
-    .pic_10,
-    .pic_11,
-    .pic_12 {
-        display: none;
-    }
-    
-    .services{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-    }
-    .slide_2  {
-        margin-top: -10px;
-        transform: scale(1.75);
-        object-fit: contain; 
-    }
-    .vertical {
-        transform: scale(0.35)
-    }
-    .horizontal {
-        transform: scale(0.35);
-    }
-    .mobiles {
-        height: 218px;
-    }
-    .slide {
-        max-width: 330px;
-    }
-    .slide > * {
-        margin-left: -5vw;
-    }
-  
-}
-@media (max-width: 440px) {
-    .portfolio-grid {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        grid-template-columns: repeat(2, 151px);
-        grid-template-rows: repeat(6, 128px);
-    }
-    .portfolio {
-        height: 880px;
-    }
-    .vertical {
-        transform: scale(0.3)
-    }
-    .horizontal {
-        transform: scale(0.3);
-    }
-    .our_services {
-        height: 1080px;
-    }
-    .portfolio-grid > li {
-        margin: -30px 0 0 -35px;
-        transform: scale(0.68);
-    }
-    .slide > * {
-        margin-left: -10vw;
-    }
-    .slide {
-        max-width: 200px;
-    }
-}
-@media (max-width: 380px) {
-    .about_us {
-        height: 1800px;
-    }
-    
-    .our_services {
-        height: 1080px;
-    }
-    .portfolio-grid > li {
-        transform: scale(0.635);
-    }
-} */
-
