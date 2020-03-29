@@ -962,6 +962,12 @@ input:focus:invalid {
     }
 }
 @media (max-width: 660px) {
+    .contact {
+        width: 80vw;
+    }
+    .form-element {
+        width: 76vw;
+    }
     .quote {
         height: 920px;
     }
@@ -1008,6 +1014,9 @@ input:focus:invalid {
     }
 }
 @media (max-width: 480px) {
+    .form-element {
+        width: 76vw;
+    }
     .quote {
         height: 1020px;
     }
@@ -1030,7 +1039,7 @@ input:focus:invalid {
         margin: 0.65vw 0 0 3.75vw;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .about_us-grid {
         grid-template-columns: repeat(1, 83vw);
         margin-bottom: 20px;
